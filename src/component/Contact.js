@@ -1,12 +1,14 @@
 const Contact=()=>{
     return (
-        <div>
-            <h1 className="font-bold text-3xl p-4 m-4">Contact us</h1>
-            <form>
-                <input type="text" className=" border border-black p-1 m-2" placeholder="name"></input>
-                <input type="text" className="border border-black p-1 m-2" placeholder="message"></input>
-                <button className="border border-black p-2 m-2 bg-black text-white rounded-lg">Submit</button>
-            </form>
+        <div className="text-center m-4 p-4 grow min-h-[60vh] mt-20">
+            <h1 className="text-2xl font-bold">CONTACT</h1>
+            <div className="w-6/12 m-auto mt-5">
+                <h1 className="font-bold">HELLO🙋‍♀️, I'm Divyani Hirulkar [Frontend Devloper]</h1>
+                <h2>Let's connect! </h2>
+                <a className="text-blue-600 font-medium" href="divyanihirulkar247@gmail.com">📧 Gmail</a><br></br>
+                <a className="text-blue-600 font-medium" href="https://www.linkedin.com/in/divyani-hirulkar-63999b1b1/"> 🪪 LinkedIn</a><br></br>
+                <a className="text-blue-600 font-medium" href="https://github.com/Divyani247"> 🔗 Github</a>
+            </div>
         </div>
     )
 }

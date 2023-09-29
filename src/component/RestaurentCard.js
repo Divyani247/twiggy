@@ -5,16 +5,18 @@ const RestaurentCard=(props)=>{
       cloudinaryImageId,
       name,
       cuisines,
-      avgRating
+      avgRating,
+      locality
     }=resData?.info
     return (
-        <div data-testid="resCard"
-         className="m-4 p-4  w-52 hover:shadow-2xl rounded-lg">
-          <img className="card-img rounded-md "src={CDN_URL+cloudinaryImageId}/>
-          <h3 className="font-bold py-1 text-lg">{name}</h3>
-          <h4 className="card-style">{cuisines.join(", ")}</h4>
-          <h5 className="card-style">{avgRating} Stars</h5>
+        <div  data-testid="resCard"
+           className="ml-10 h- p-4  w-64 hover:shadow-2xl flex flex-col   rounded-lg ">
+          <img className="rounded-md overflow-hidden min-h-[180px] h-20 object-cover overlay"src={CDN_URL+cloudinaryImageId}/>
+          <h3 className="font-bold p-1 text-lg">{name}</h3>
+          <h4 className="text-base truncate ">{cuisines.join(", ")}</h4>
+          <h4 className="text-base truncate ">{locality}</h4>
+          <h5 className="">{avgRating}⭐</h5>
         </div>
     )
 }
-export default RestaurentCard;
+export default RestaurentCard; //hover:shadow-2xl

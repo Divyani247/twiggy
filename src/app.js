@@ -11,6 +11,7 @@ import { createBrowserRouter,RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.js";
 import Cart from "./component/Carts.js";
+import Footer from "./component/Footer.js";
 
 
 const AppLayout = () => {
@@ -19,7 +20,7 @@ const AppLayout = () => {
          <div className="app">
             <Header/>
             <Outlet/>
-            
+            <Footer />
          </div> 
        </Provider>
     )       
