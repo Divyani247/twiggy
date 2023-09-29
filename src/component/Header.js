@@ -37,7 +37,7 @@ console.log(cartItems);
              <Link className="nav-style" to="/contact">contact us</Link>
              </li>
              <li className="px-4">
-             <Link to="/Cart">🛒cart({cartItems.length})</Link>
+             <Link to="/Cart">🛒Cart-({cartItems.length})</Link>
              </li>
               <button className=""onClick={()=>{
                 btnname=="Login"?setbtnname("Logout")

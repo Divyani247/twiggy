@@ -18,6 +18,6 @@ const ResCategory=({data, showItems,setshowIndex})=>{
         </div>
 
     </div>
-    )
-}
+    );
+};
 export default ResCategory

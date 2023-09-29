@@ -30,15 +30,19 @@ const Body=()=>{
   
   
   return listOfRestaurent.length === 0 ? (
-    <Shimmer />
+    <Shimmer/>
   ) : (
         <div>
           <div className="flex m-4"> 
            <div className="mr-6">
-             <input type="text" className="border border-solid border-black px-3" value={searchtxt} onChange={(e)=>{
-                   setsearchtxt(e.target.value);
-             }}
-             />
+             <input 
+              type="text" 
+              data-testid="searchInput" 
+              className="border border-solid border-black px-3" 
+              value={searchtxt} onChange={(e)=>{
+                 setsearchtxt(e.target.value);
+              }}
+            />
              <button className="px-3 py-1 rounded-md  bg-orange-600 m-2" onClick={()=>{
                   const filteredRes=listOfRestaurent.filter((res)=>
                   res.info.name.toLowerCase().includes(searchtxt.toLowerCase())
