@@ -6,7 +6,6 @@ import About from "./component/About.js";
 import Contact from "./component/Contact.js";
 import Error from "./component/Error.js";
 import RestaurentMenu from "./component/RestaurentMenu.js";
-import RestaurentMenu from "./component/RestaurentMenu.js";
 import { createHashRouter,RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.js";
