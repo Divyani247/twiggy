@@ -1,6 +1,6 @@
 import { fireEvent, render ,screen} from "@testing-library/react";
 import Body from "../body.js";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import MOCK_DATA from "../mocks/MockResList.json";
 import "@testing-library/jest-dom";
 import { act } from "react-dom/test-utils";
@@ -33,9 +33,9 @@ it("should filter top rated restaurents",async()=>{
 
 it("should render body component with search button",async()=>{
     await act(async () => render(
-    <BrowserRouter>
+    <HashRouter>
      <Body/>
-    </BrowserRouter> 
+    </HashRouter> 
     )
 );
     const cardsbeforefilter= screen.getAllByTestId("resCard");

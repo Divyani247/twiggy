@@ -6,7 +6,7 @@ import Carts from "../Carts";
 import MOCK_DATA from "../mocks/mockResMenu.json";
 import { Provider } from "react-redux";
 import appStore from "../../utils/appStore";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
 
 global.fetch=jest.fn(()=>{
@@ -18,13 +18,13 @@ global.fetch=jest.fn(()=>{
 it("should load restaurent menu component",async()=>{
 
     await act(async()=>render(
-      <BrowserRouter>
+      <HashRouter>
           <Provider store={appStore}>
              <Header/>
              <RestaurentMenu/>
              <Carts/>
          </Provider> 
-      </BrowserRouter>
+      </HashRouter>
    ));
     const accordheader=screen.getByText("Pocket Friendly Rolls(8)");
     fireEvent.click(accordheader);

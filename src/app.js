@@ -7,7 +7,7 @@ import Contact from "./component/Contact.js";
 import Error from "./component/Error.js";
 import RestaurentMenu from "./component/RestaurentMenu.js";
 import RestaurentMenu from "./component/RestaurentMenu.js";
-import { createBrowserRouter,RouterProvider, Outlet } from "react-router-dom";
+import { createHashRouter,RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore.js";
 import Cart from "./component/Carts.js";
@@ -25,7 +25,7 @@ const AppLayout = () => {
        </Provider>
     )       
 }
-const appRouter=createBrowserRouter([
+const appRouter=createHashRouter([
     {
         path:"/",
         element:<AppLayout />,
