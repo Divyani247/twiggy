@@ -15,7 +15,7 @@ import Footer from "./component/Footer.js";
 
 const AppLayout = () => {
     return (
-       <Provider store={appStore}>
+        <Provider store={appStore}>
          <div className="app">
             <Header/>
             <Outlet/>
